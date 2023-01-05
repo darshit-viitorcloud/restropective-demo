@@ -47,17 +47,31 @@
                 font-family: 'Noto Sans';
                 margin-left: 50px;
             }
-            .vertical {
+            /* .vertical {
                 border-left: 1px solid black;
                 height: 225px;
                 position:absolute;
-                left: 50%;
+                left: 30%;
             }
             .vertical1 {
                 border-left: 1px solid black;
                 height: 225px;
                 position:absolute;
-                left: 25%;
+                left: 35%;
+            } */
+            #tab{
+                /* border: 2px solid black;  */
+                width: 110%;
+                margin-left: -5%;
+                font-weight: 700;
+                font-size: 40px;
+                font-family: 'Noto Sans';
+            }
+            .result{
+                font-size: 20px;
+            }
+            #label{
+                line-height: 300%;
             }
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap'); 
         </style>

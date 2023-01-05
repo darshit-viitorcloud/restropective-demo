@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('home',[DemoController::class,'index'])->name('home');
 Route::get('page-1',[DemoController::class,'view'])->name('page-1');
-
+Route::any('openAi',[DemoController::class,'view'])->name('openAi');
