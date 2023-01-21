@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('home',[DemoController::class,'index'])->name('home');
-Route::get('page-1',[DemoController::class,'view'])->name('page-1');
-Route::any('openAi',[DemoController::class,'view'])->name('openAi');
+Route::get('/',[DemoController::class,'index'])->name('home');
+Route::get('page-1',[DemoController::class,'page1'])->name('page-1');
+//Route::any('openAi',[DemoController::class,'view'])->name('openAi');
+Route::post('text-moderation',[DemoController::class,'textModeration'])->name('text-moderation');
+Route::post('spell-check',[DemoController::class,'spellCheck'])->name('spell-check');
+Route::post('text-completion',[DemoController::class,'textCompletion'])->name('text-completion');
+Route::post('image-generation',[DemoController::class,'imageGeneration'])->name('image-generation');
+Route::post('image-variation',[DemoController::class,'imageVariation'])->name('image-variation');
